@@ -1,1 +1,0 @@
-data = '{"semanas": [{ "fecha": "29 de septiembre","id":1,"canciones": [1, 2]},{ "fecha": "30 de septiembre","id":2,"canciones": [1, 2]}]}';
