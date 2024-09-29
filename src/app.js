@@ -15,7 +15,7 @@ function selectWeek(week) {
     document.getElementById("sidebar").style.left = "-250px";
     document.getElementById("main").style.marginLeft = "0";
     titulo.innerText = week.fecha;
-    fetch('./canciones/santo.json')
+    fetch("./canciones/santo.json")
         .then(response => response.json())
         .then(data => {
             console.log(data);
@@ -23,6 +23,7 @@ function selectWeek(week) {
 }
 
 // Add your code here
+semanasData = JSON.parse(data);
 semanasData.semanas.forEach(item => {const button = document.createElement("button");
     button.innerText = item['fecha'];
     button.id = item['id'];
