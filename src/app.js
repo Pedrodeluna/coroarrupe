@@ -14,6 +14,9 @@ document.getElementById("close-btn").onclick = function() {
     document.getElementById("main").style.marginLeft = "0";
 }
 function selectWeek(week) {
+    while (songs.firstChild) {
+        songs.removeChild(songs.firstChild);
+    }
     document.getElementById("sidebar").style.left = "-250px";
     document.getElementById("main").style.marginLeft = "0";
     titulo.innerText = week.fecha;

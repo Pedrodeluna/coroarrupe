@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
 }
 #sidebar {
     position: fixed;
@@ -8,7 +10,9 @@ body {
     height: 100%;
     background-color: #111;
     transition: 0.3s;
-    z-index: 1000;
+}
+#principal {
+    background-color: #f4f4f4;
 }
 #sidebar a {
     padding: 10px 15px;
@@ -23,22 +27,13 @@ body {
 }
 #menu-btn {
     font-size: 30px;
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    left: 15px;
     color: #111;
-    z-index: 1000;
 }
 #main {
-    margin-left: 0; /* Ajusta este valor según el ancho de tu sidebar */
-    padding: 20px;
     background-color: #f4f4f4;
-    min-height: 100vh; /* Asegura que el main ocupe al menos la altura de la ventana */
     transition: margin-left 0.3s; /* Transición suave para el desplazamiento del sidebar */
 }
 #titulo {
-    margin-top: calc(10px + 2em); /* Ajusta el margen superior para que quede debajo del navbar */
     font-size: 2em;
 }
 .week-btn {
@@ -60,15 +55,8 @@ body {
 
 /* Style for the navbar */
 #navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 500;
+    background-color: #f4f4f4;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
-    padding: 10px; /* Añade un poco de relleno */
-    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
-    align-items: center; /* Alinea los elementos verticalmente */
 }
 
 /* Style for the song buttons */
@@ -88,22 +76,4 @@ body {
 
 .song-btn:hover {
     background-color: #555;
-}
-@media (max-width: 600px) {
-    #navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    #menu-btn {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    #botones {
-        margin-left: 0;
-        width: 100%;
-    }
-    .week-btn {
-        width: 100%;
-        text-align: center;
-    }
 }

@@ -12,6 +12,19 @@
                 "Salida": "alcalordelapalabra"
 
             }
+        },
+        {
+            "fecha": "6 de octubre",
+            "id": 2,
+            "canciones": {
+                "Entrada": "amaos",
+                "Aleluya": "aleluyataize",
+                "Ofertorio": "quetepuedodar",
+                "Santo": "santotsnc",
+                "Comunión": "nosfaltanheroes",
+                "Salida": "alcalordelapalabra"
+
+            }
         }
     ]
 }
