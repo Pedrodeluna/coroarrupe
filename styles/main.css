@@ -8,67 +8,95 @@ body {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #111;
+    background-color: #fdf4d9;
     transition: 0.3s;
+
+
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 #principal {
-    background-color: #f4f4f4;
+    background-color: white;
+    padding: 15px
 }
 #sidebar a {
-    padding: 10px 15px;
+    padding: 10px 0px 20px;
     text-decoration: none;
     font-size: 18px;
-    color: #818181;
+    color: #111;
     display: block;
     transition: 0.3s;
+    
 }
 #sidebar a:hover {
-    color: #f1f1f1;
+    color: #dadada;
 }
 #menu-btn {
     display: flex;
-    font-size: 30px;
-    color: #111;
+    font-size: 50px;
+    color: rgb(253, 152, 0);
 }
+#mas{
+    color:#f71818 !important
+}
+
+#burguer{
+    color: rgb(129, 129, 129);
+    margin-right: 15px;
+}
+
 #main {
-    background-color: #f4f4f4;
     transition: margin-left 0.3s; /* Transición suave para el desplazamiento del sidebar */
+
 }
 #titulo {
     font-size: 2em;
+    margin-top: 10px;
+
+    
+}
+
+.bodyEelements{
+    margin: 10px
 }
 .week-btn {
     display: block;
+    margin-bottom: 10px;
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
-    background-color: #444;
-    margin-right: auto;
+    background-color: #ff9800;
     color: white;
     border: none;
     cursor: pointer;
     text-align: left;
     flex-grow: 0;
+    border-radius: 5px;
+
 }
 .week-btn:hover {
-    background-color: #555;
+    background-color: #f3b14e;
 }
 
 /* Style for the navbar */
 #navbar {
-    background-color: #f4f4f4;
+    
     display: flexbox;
 }
 
 /* Style for the song buttons */
 .song-btn {
     margin: 5px; /* Espacio entre los botones */
-    color: white;
-    background-color: #444;
     border: none;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+
+
+
+    background-color: #ff9800;
+    color: white;
+    border-radius: 5px;
 }
 
 #botones {
@@ -78,5 +106,10 @@ body {
 }
 
 .song-btn:hover {
-    background-color: #555;
+    background-color: #f3b14e;
 }
+
+#songs{
+    margin-top: 15px;
+}
+

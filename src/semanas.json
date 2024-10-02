@@ -17,12 +17,12 @@
             "fecha": "6 de octubre",
             "id": 2,
             "canciones": {
-                "Entrada": "amaos",
-                "Aleluya": "aleluyataize",
+                "Entrada": "diosestaaqui",
+                "Aleluya": "cantaaleluya",
                 "Ofertorio": "quetepuedodar",
-                "Santo": "santotsnc",
-                "Comunión": "nosfaltanheroes",
-                "Salida": "alcalordelapalabra"
+                "Santo": "santomiguel",
+                "Comunión": "almamisionera",
+                "Salida": "enciendeme"
 
             }
         }

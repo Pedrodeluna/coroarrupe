@@ -37,6 +37,7 @@ function selectWeek(week) {
         }
         button.classList.add("song-btn");
 
+
         botones.appendChild(button);
     });
 }
@@ -84,3 +85,7 @@ fetch("src/semanas.json")
         sidebar.appendChild(button);
     });
 });
+
+window.onload = function() {
+    document.getElementById('menu-btn').click();
+}
