@@ -1,6 +1,7 @@
 const sidebar = document.getElementById("sidebar");
 const titulo = document.getElementById("titulo");
 const navbar = document.getElementById("navbar");
+const botones = document.getElementById("botones");
 const songs = document.getElementById("songs");
 
 // Entry point of the JavaScript code for the web application
@@ -19,8 +20,8 @@ function selectWeek(week) {
     console.log(week);
     const cancionesKeys = Object.keys(week.canciones);
     
-    while (navbar.firstChild) {
-        navbar.removeChild(navbar.firstChild);
+    while (botones.firstChild) {
+        botones.removeChild(botones.firstChild);
     }
 
     cancionesKeys.forEach(key => {
@@ -32,11 +33,14 @@ function selectWeek(week) {
         }
         button.classList.add("song-btn");
 
-        navbar.appendChild(button);
+        botones.appendChild(button);
     });
 }
 
 function show_song(canciones, title) {
+    while (songs.firstChild) {
+        songs.removeChild(songs.firstChild);
+    }
     fetch("src/canciones/"+canciones[title]+".json")
         .then(response => response.json())
         .then(songData => {
@@ -48,8 +52,14 @@ function show_song(canciones, title) {
             const letra = document.createElement("p")
             letra.innerText = songData.letra;
             songs.appendChild(letra);
-        });
 
+            if (songData.link) {
+                const link = document.createElement("a")
+                link.href = songData.link;
+                link.innerText = "Escucha aquí la canción";
+                songs.appendChild(link);
+            }
+        });
 }
 
 
