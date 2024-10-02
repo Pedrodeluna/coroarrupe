@@ -4,21 +4,22 @@ const navbar = document.getElementById("navbar");
 const botones = document.getElementById("botones");
 const songs = document.getElementById("songs");
 
+
 // Entry point of the JavaScript code for the web application
 document.getElementById("menu-btn").onclick = function() {
     document.getElementById("sidebar").style.left = "0";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("principal").style.marginLeft = "250px";
 }
 document.getElementById("close-btn").onclick = function() {
     document.getElementById("sidebar").style.left = "-250px";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("principal").style.marginLeft = "0";
 }
 function selectWeek(week) {
     while (songs.firstChild) {
         songs.removeChild(songs.firstChild);
     }
     document.getElementById("sidebar").style.left = "-250px";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("principal").style.marginLeft = "0";
     titulo.innerText = week.fecha;
     console.log(week);
     const cancionesKeys = Object.keys(week.canciones);
