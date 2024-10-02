@@ -74,6 +74,7 @@ body {
 #botones {
     margin-left: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .song-btn:hover {
