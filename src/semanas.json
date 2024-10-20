@@ -25,6 +25,32 @@
                 "Salida": "enciendeme"
 
             }
+        },
+        {
+            "fecha": "13 de octubre",
+            "id": 3,
+            "canciones": {
+                "Entrada": "yocelebrare",
+                "Aleluya": "aleluyatierrashort",
+                "Ofertorio": "vivirealabandote",
+                "Santo": "santotsnc",
+                "Comunión": "lafila",
+                "Salida": "realidad"
+
+            }
+        },
+        {
+            "fecha": "20 de octubre",
+            "id": 4,
+            "canciones": {
+                "Entrada": "yocelebrare",
+                "Aleluya": "aleluyataize",
+                "Ofertorio": "sinomueroporti",
+                "Santo": "santobeatles",
+                "Comunión": "lafila",
+                "Salida": "soislasal"
+
+            }
         }
     ]
 }
