@@ -51,6 +51,19 @@
                 "Salida": "soislasal"
 
             }
+        },
+        {
+            "fecha": "27 de octubre",
+            "id": 5,
+            "canciones": {
+                "Entrada": "diosestaaqui",
+                "Aleluya": "jesusesseñor",
+                "Ofertorio": "hoyyomeofrezco",
+                "Santo": "santotsnc",
+                "Comunión": "enmigetsemani",
+                "Salida": "madre"
+
+            }
         }
     ]
 }
